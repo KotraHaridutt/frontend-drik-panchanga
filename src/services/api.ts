@@ -34,7 +34,7 @@ export const fetchPanchanga = async (
       calendar,
     };
 
-    const response = await api.get("/", { params });
+    const response = await api.get("", { params });
     return response.data;
   } catch (error) {
     if (axios.isAxiosError(error)) {
@@ -69,7 +69,7 @@ export const fetchTithiDates = async (
     };
     if (startYear !== undefined) params.startYear = startYear;
     if (endYear !== undefined) params.endYear = endYear;
-    const response = await api.get("/tithi-dates", { params });
+    const response = await api.get("tithi-dates", { params });
     return response.data;
   } catch (error) {
     if (axios.isAxiosError(error)) {
