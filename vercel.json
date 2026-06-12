@@ -1,11 +1,15 @@
 {
   "rewrites": [
     { 
+      "source": "/api", 
+      "destination": "http://13.232.242.4:3002/panchanga" 
+    },
+    { 
       "source": "/api/:path*", 
       "destination": "http://13.232.242.4:3002/panchanga/:path*" 
     },
     { 
-      "source": "/(.*)", 
+      "source": "/((?!api).*)" , 
       "destination": "/index.html" 
     }
   ]
