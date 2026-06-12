@@ -5,8 +5,8 @@ import {
   TithiDatesResponse,
 } from "../types/panchanga";
 
-// const API_BASE_URL = "https://api.karishye.drik.divami.com/panchanga"; // Development URL
-const API_BASE_URL = "http://localhost:3002/panchanga";
+const API_BASE_URL =
+  process.env.REACT_APP_API_URL || "http://localhost:3002/panchanga";
 const api = axios.create({
   baseURL: API_BASE_URL,
   timeout: 10000,

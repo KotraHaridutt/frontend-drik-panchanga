@@ -16,5 +16,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "../../drik-panchanga-frontend/TithiFinder.tsx"]
+  "include": ["src"]
 }
